@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>from three</title>
+  <meta name="description" content="a resume from yansanmu">
+  <meta id="Viewport" name="viewport" content="width=device-width">
+  <script>
+    var ww, ww2; //get proper width
+    if (window.innerWidth)
+      ww = window.innerWidth;
+    else if ((document.body) && (document.body.clientWidth))
+      ww = document.body.clientWidth;
+    if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth)
+    {
+      ww2 = document.documentElement.clientWidth;
+    } 
+    ww = ww2||ww;
+    ww = ww || window.screen.width;
+    var mw = 750; // min width of site 
+    var ratio =  ww / mw; //calculate ratio
+    //if( ww < mw){ //smaller than minimum size
+      document.getElementById('Viewport').setAttribute('content', 'initial-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=yes, width=' + mw);
+    //}else{ //regular size
+      //document.getElementById('Viewport').setAttribute('content', 'initial-scale=1.0, maximum-scale=2, minimum-scale=1.0, user-scalable=yes, width=' + mw);
+    //}
+    
+  </script>
+</head>
+ 
+<body style="min-width:750px">
+  <!-- This script adds the Roboto font to our project. For more detail go to this site:  http://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,500 -->
+  
+  <div id='app'>
+    <script src="/app.js"></script>
+  </div>
+</body>
+ 
+</html>
+ 
